@@ -13,31 +13,31 @@ function playRound(computerSelection, playerSelection) {
     computerSelection = computerPlay();
 
     if (playerSelection === computerSelection) {
-        alert("It's a tie");
+        alert(`YOU: ${playerSelection}\nCOMPUTER: ${computerSelection}\nIt's a tie`);
     }
     else if (computerSelection == "rock" && playerSelection == "scissor") {
         computerScore += 1;
-        alert(`You lost ${computerSelection} beats ${playerSelection}`);
+        alert(`YOU: ${playerSelection}\nCOMPUTER: ${computerSelection}\nYou lost ${computerSelection} beats ${playerSelection}`);
     }
     else if (computerSelection == "rock" && playerSelection == "paper") {
         playerScore += 1;
-        return `You won ${playerSelection} beats ${computerSelection}`;
+        alert( `YOU: ${playerSelection}\nCOMPUTER: ${computerSelection}\nYou won ${playerSelection} beats ${computerSelection}`);
     }
     else if (computerSelection == "paper" && playerSelection == "scissor") {
         playerScore += 1;
-        alert(`You won ${playerSelection} beats ${computerSelection}`);
+        alert(`YOU: ${playerSelection}\nCOMPUTER: ${computerSelection}\nYou won ${playerSelection} beats ${computerSelection}`);
     }
     else if (computerSelection == "paper" && playerSelection == "rock") {
         computerScore += 1;
-        alert(`You lost ${computerSelection} beats ${playerSelection}`);
+        alert(`YOU: ${playerSelection}\nCOMPUTER: ${computerSelection}\nYou lost ${computerSelection} beats ${playerSelection}`);
     }
     else if (computerSelection == "scissor" && playerSelection == "rock") {
         playerScore += 1;
-        alert(`You won ${playerSelection} beats ${computerSelection}`);
+        alert(`YOU: ${playerSelection}\nCOMPUTER: ${computerSelection}\nYou won ${playerSelection} beats ${computerSelection}`);
     }
     else if (computerSelection == "scissor" && playerSelection == "paper") {
         computerScore += 1;
-        alert(`You lost ${computerSelection} beats ${playerSelection}`);
+        alert(`YOU: ${playerSelection}\nCOMPUTER: ${computerSelection}\nYou lost ${computerSelection} beats ${playerSelection}`);
     };
 };
 
