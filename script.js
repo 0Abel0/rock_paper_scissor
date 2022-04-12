@@ -9,7 +9,7 @@ function computerPlay() {
 }
 
 function playRound(computerSelection, playerSelection) {
-    playerSelection = prompt(`Round(${roundNumber}/5})\n\nRock Paper Scissor:`);
+    playerSelection = prompt(`Round(${roundNumber}/5)\n\nRock Paper Scissor:`);
     playerSelection = playerSelection.toLowerCase();
     computerSelection = computerPlay();
 
