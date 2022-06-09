@@ -55,7 +55,7 @@ button.forEach((btn) => {
             score.textContent = "";
         }
         else if (playerScore == 5) {
-            alert("YOU have deafeated the COMPUTER");
+            alert("YOU have beaten the COMPUTER");
             computerScore = 0;
             playerScore = 0;
             result.textContent = "";
